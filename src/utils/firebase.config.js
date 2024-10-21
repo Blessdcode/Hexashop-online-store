@@ -12,7 +12,17 @@ import {
   updateProfile,
 } from "firebase/auth";
 
-import { doc, getDoc, setDoc, getFirestore } from "firebase/firestore";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  setDoc,
+  collection,
+  writeBatch,
+  query,
+  getDocs,
+  orderBy,
+} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBiFV04ewSnwYivETEQztVbMGiYWbPR0fY",
@@ -24,7 +34,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
- initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 export const db = getFirestore();
 
 const googleProvider = new GoogleAuthProvider();
@@ -94,4 +104,30 @@ export const updateUserProfile = async (profileData) => {
   } else {
     console.log("No user is currently signed in");
   }
+};
+
+export const addCollectionAndDocuments = async (
+  collectionKey,
+  objectsToAdd
+  // field = "title"
+) => {
+  const collectionRef = collection(db, collectionKey);
+  const batch = writeBatch(db);
+
+  objectsToAdd.forEach((object) => {
+    const docRef = doc(collectionRef, object.title.toLowerCase());
+    batch.set(docRef, object);
+  });
+
+  await batch.commit();
+  console.log("done");
+};
+
+
+export const getCategoriesAndDocuments = async () => {
+  const collectionRef = collection(db, "categories");
+  const q = query(collectionRef, orderBy("title", "desc"));
+
+  const querySnapshot = await getDocs(q);
+  return querySnapshot.docs.map((doc) => doc.data());
 };
