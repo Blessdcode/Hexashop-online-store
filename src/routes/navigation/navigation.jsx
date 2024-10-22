@@ -9,6 +9,7 @@ import CartIcon from "../../components/cart-icon/cart-icon";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import Profile from '../../components/profile/profile-components'
 
+import Footer from '../../components/footer/footer-component'
 import {
   Container,
   NavLinks,
@@ -38,32 +39,38 @@ const Navigation = () => {
           <img src={logo} alt="image" />
         </LogoContainer>
         <CartIconContainer>
+          {currentUser ? <Profile /> : <NavLink to="/auth">Sign Up</NavLink>}
           <CartIcon onClick={toggleCartOpen} />
           <HamburgerIcon onClick={toggleMenu}>&#9776;</HamburgerIcon>
         </CartIconContainer>
 
         <NavLinks>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/mens">Mens</NavLink>
+          <NavLink to="/womens">womens</NavLink>
+          <NavLink to="/accessories">accessories</NavLink>
           <NavLink to="/shop">Shop</NavLink>
           <NavLink to="/about">About us</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <CartIcon onClick={toggleCartOpen} />
-          {currentUser ? (
-            <Profile/>
-          ) : (
-            <NavLink to="/auth">Sign Up</NavLink>
-          )}
+          {currentUser ? <Profile /> : <NavLink to="/auth">Sign Up</NavLink>}
         </NavLinks>
         {isCartOpen && <CartDropdown />}
       </Container>
       {isMenuOpen && (
         <MobileMenu>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/mens">Mens</NavLink>
+          <NavLink to="/womens">womens</NavLink>
+          <NavLink to="/accessories">accessories</NavLink>
           <NavLink to="/shop">Shop</NavLink>
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/contact">Contact</NavLink>
-          <NavLink to="/auth">Sign Up</NavLink>
+          {/* {currentUser ? <Profile /> : <NavLink to="/auth">Sign Up</NavLink>} */}
         </MobileMenu>
       )}
       <Outlet />
+      <Footer/>
     </Fragment>
   );
 };

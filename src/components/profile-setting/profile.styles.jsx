@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
-  top: 50px;
+  top: 40px;
+  right: 0;
   background: #333;
   color: #fff;
   text-align: center;
@@ -16,7 +17,7 @@ export const Container = styled.div`
 export const ButtonSignOut = styled.div`
   cursor: pointer;
   background: whitesmoke;
-  height: 20px;
+  height: 40px;
   color: #333;
   padding: 8px;
   text-align: center;

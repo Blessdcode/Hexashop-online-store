@@ -470,6 +470,611 @@ export const SHOP_DATA = [
   },
 ];
 
+export const MENS = [
+  {
+    title: "Coats & Jackets",
+    items: [
+      {
+        id: 1,
+        name: "skit water black jacket",
+        imageUrl: "https://i.ibb.co/C0xcQJy/ski-water-black-jacket.jpg",
+        price: 25000,
+      },
+      {
+        id: 2,
+        name: "longline parka coat",
+        imageUrl: "https://i.ibb.co/LQqW227/longline-parka-coat.jpg",
+        price: 29999,
+      },
+      {
+        id: 3,
+        name: "Longline puffer coat",
+        imageUrl: "https://i.ibb.co/VS1C0GV/logline-puffer-coat.jpg",
+        price: 29000,
+      },
+      {
+        id: 4,
+        name: "leather biker jacket",
+        imageUrl: "https://i.ibb.co/8MyZ40Y/leather-biker-jacket.jpg",
+        price: 45000,
+      },
+      {
+        id: 5,
+        name: "cord shirt jacket",
+        imageUrl: "https://i.ibb.co/Ykbbw8S/cord-shirt-jacket.jpg",
+        price: 25000,
+      },
+      {
+        id: 6,
+        name: "coller tech jacket",
+        imageUrl: "https://i.ibb.co/f4RHtyh/collar-tech-jacket.jpg",
+        price: 27999,
+      },
+      {
+        id: 7,
+        name: "button down jacket",
+        imageUrl: "https://i.ibb.co/g6vqj5C/button-down-jacket.jpg",
+        price: 23000,
+      },
+      {
+        id: 8,
+        name: "bomber grey jacket",
+        imageUrl: "https://i.ibb.co/F6jxKgs/bomber-jacket-grey.jpg",
+        price: 32500,
+      },
+      {
+        id: 9,
+        name: "bomber black jacket",
+        imageUrl: "https://i.ibb.co/Lkhd3Jn/bomber-jacket-black.jpg",
+        price: 25000,
+      },
+      {
+        id: 10,
+        name: "bomber jacket",
+        imageUrl: "https://i.ibb.co/KDKD9jy/bomber-jacket.jpg",
+        price: 25000,
+      },
+    ],
+  },
+  {
+    title: "jumpers",
+    items: [
+      {
+        id: 1,
+        name: "knitted jumper",
+        imageUrl: "https://i.ibb.co/51zp2Fv/knitted-jumper-navy.jpg",
+        price: 20000,
+      },
+      {
+        id: 2,
+        name: "knitted jumper with stripe",
+        imageUrl: "https://i.ibb.co/6vb5sFP/knitted-jumper-with-stripe.jpg",
+        price: 29999,
+      },
+      {
+        id: 3,
+        name: "fisherman jumper",
+        imageUrl: "https://i.ibb.co/gSjbrZK/fisherman-rib-jumper.jpg",
+        price: 25000,
+      },
+      {
+        id: 4,
+        name: "black jumper",
+        imageUrl: "https://i.ibb.co/9nzNWVF/half-zip-jumper.jpg",
+        price: 20000,
+      },
+      {
+        id: 5,
+        name: "oversized jumper",
+        imageUrl: "https://i.ibb.co/RbMpt3t/oversized-jumper.jpg",
+        price: 20000,
+      },
+      {
+        id: 6,
+        name: "quart jumper",
+        imageUrl: "https://i.ibb.co/VS586xs/quart-jumper-zip.jpg",
+        price: 25000,
+      },
+      {
+        id: 7,
+        name: "rib-roll jumper",
+        imageUrl: "https://i.ibb.co/s3QSf7r/rib-roll-jumper.jpg",
+        price: 25000,
+      },
+      {
+        id: 8,
+        name: "wider rib jumper",
+        imageUrl: "https://i.ibb.co/cXfLkM7/wider-rib-jumper.jpg",
+        price: 25000,
+      },
+    ],
+  },
+  {
+    title: "T-shirt",
+    items: [
+      {
+        id: 1,
+        name: "white t-shirt",
+        imageUrl: "https://i.ibb.co/X8ybqwf/t-shirt-white-print.jpg",
+        price: 18000,
+      },
+      {
+        id: 2,
+        name: "white t-shirt flowers",
+        imageUrl: "https://i.ibb.co/2ZS2nkB/t-shirt-white-flowers.jpg",
+        price: 18000,
+      },
+      {
+        id: 3,
+        name: "white t-shirt",
+        imageUrl: "https://i.ibb.co/F0CBZfv/t-shirt-white.jpg",
+        price: 18000,
+      },
+      {
+        id: 4,
+        name: "mickey-print t-shirt",
+        imageUrl: "https://i.ibb.co/JtNWPr3/t-shirt-mickey-print.jpg",
+        price: 18000,
+      },
+      {
+        id: 5,
+        name: "green t-shirt",
+        imageUrl: "https://i.ibb.co/ZK3RJR9/t-shirt-green.jpg",
+        price: 18000,
+      },
+      {
+        id: 6,
+        name: "brown t-shirt",
+        imageUrl: "https://i.ibb.co/4dSfgB0/t-shirt-brown.jpg",
+        price: 18000,
+      },
+      {
+        id: 7,
+        name: "black t-shirt",
+        imageUrl: "https://i.ibb.co/N1BX9pZ/t-shirt-black.jpg",
+        price: 18000,
+      },
+      {
+        id: 8,
+        name: "5-pack black t-shirt",
+        imageUrl: "https://i.ibb.co/1zbfy4t/t-shirt-5pack-black.jpg",
+        price: 15000,
+      },
+      {
+        id: 9,
+        name: "5-pack t-shirt",
+        imageUrl: "https://i.ibb.co/c8wW0Mm/t-shirt-5pack.jpg",
+        price: 15000,
+      },
+    ],
+  },
+  {
+    title: "shoes",
+    items: [
+      {
+        id: 1,
+        name: "roger trainer shoe",
+        imageUrl: "https://i.ibb.co/qs2Kt4X/roger-spin-trainer-shoe.jpg",
+        price: 25000,
+      },
+      {
+        id: 2,
+        name: "puma vintage shoe",
+        imageUrl: "https://i.ibb.co/Rccp3hJ/puma-vintage-shoe.jpg",
+        price: 35000,
+      },
+      {
+        id: 3,
+        name: "roger trainer shoe",
+        imageUrl: "https://i.ibb.co/qs2Kt4X/roger-spin-trainer-shoe.jpg",
+        price: 25000,
+      },
+      {
+        id: 4,
+        name: "rhode loafer shoe",
+        imageUrl: "https://i.ibb.co/52NKYBj/rhode-loafer-shoe.jpg",
+        price: 25000,
+      },
+      {
+        id: 5,
+        name: "lace-up brown boot",
+        imageUrl: "https://i.ibb.co/vwDNmT2/lace-up-brown-boots.jpg",
+        price: 45000,
+      },
+      {
+        id: 6,
+        name: "lace-up black boot",
+        imageUrl: "https://i.ibb.co/10gCq50/lace-up-black-boots.jpg",
+        price: 45000,
+      },
+      {
+        id: 7,
+        name: "crocs unisex",
+        imageUrl: "https://i.ibb.co/G0TR5D9/crocs-unisex.jpg",
+        price: 15000,
+      },
+      {
+        id: 8,
+        name: "campus trainer shoes",
+        imageUrl: "https://i.ibb.co/jWnXCmN/canpus-trainer-shoes.jpg",
+        price: 49999,
+      },
+      {
+        id: 9,
+        name: "chunky trainer shoes",
+        imageUrl: "https://i.ibb.co/NWWm671/chunky-trainers-shoe.jpg",
+        price: 49999,
+      },
+    ],
+  },
+  {
+    title: "trousers",
+    items: [
+      {
+        id: 1,
+        name: "levis jeans",
+        imageUrl: "https://i.ibb.co/Hhyh1FY/trou-relaxed-fit-jeans.jpg",
+        price: 30000,
+      },
+      {
+        id: 2,
+        name: "jogger pant",
+        imageUrl: "https://i.ibb.co/Sf1dzPs/trou-joggers-marl-grey.jpg",
+        price: 25000,
+      },
+      {
+        id: 3,
+        name: "black joggers",
+        imageUrl: "https://i.ibb.co/jG7VLgs/trou-joggers-black.jpg",
+        price: 25000,
+      },
+      {
+        id: 4,
+        name: "fit jeans",
+        imageUrl: "https://i.ibb.co/QdGZdHB/trou-fit-jeans.jpg",
+        price: 20000,
+      },
+      {
+        id: 5,
+        name: "chino trousers",
+        imageUrl: "https://i.ibb.co/vdBRsQ2/trou-chino-trousers.jpg",
+        price: 25000,
+      },
+      {
+        id: 6,
+        name: "cargo jeans",
+        imageUrl: "https://i.ibb.co/QJ80GXN/trou-cargo-trouser.jpg",
+        price: 31000,
+      },
+      {
+        id: 7,
+        name: "brown-check trousers",
+        imageUrl: "https://i.ibb.co/tCwCCQV/trou-brown-check-trousers.jpg",
+        price: 35000,
+      },
+      {
+        id: 8,
+        name: "balloon jeans",
+        imageUrl: "https://i.ibb.co/WWjxNtP/trou-balloon-jeans.jpg",
+        price: 35000,
+      },
+    ],
+  },
+];
+
+export const WOMENS = [
+  {
+    title: "coats & jackets",
+    items: [
+      {
+        id: 1,
+        name: "nylon coat",
+        imageUrl: "https://i.ibb.co/ZgmBPyp/nylon-coat.jpg",
+        price: 25000,
+      },
+      {
+        id: 2,
+        name: "jacket with ribbed",
+        imageUrl: "https://i.ibb.co/R7wM2cJ/jacket-with-ribbed.jpg",
+        price: 25000,
+      },
+      {
+        id: 3,
+        name: "jacket with ribbed black",
+        imageUrl: "https://i.ibb.co/1Qj79b3/jacket-with-ribbed-black.jpg",
+        price: 25000,
+      },
+      {
+        id: 4,
+        name: "jacket coutton green",
+        imageUrl: "https://i.ibb.co/Z2GY1GV/jacket-coutton-green.jpg",
+        price: 27000,
+      },
+      {
+        id: 5,
+        name: "jacket jean-with-gold-button",
+        imageUrl: "https://i.ibb.co/w0ms5Zz/jacket-jean-with-gold-button.jpg",
+        price: 30000,
+      },
+      {
+        id: 6,
+        name: "jacket cape coller ",
+        imageUrl: "https://i.ibb.co/HGwL5J8/jacket-cape-with-coller.jpg",
+        price: 20000,
+      },
+      {
+        id: 7,
+        name: "herringbone coat",
+        imageUrl: "https://i.ibb.co/Rcyb0GG/herringbone-coat.jpg",
+        price: 35000,
+      },
+      {
+        id: 8,
+        name: "viscose coat",
+        imageUrl: "https://i.ibb.co/yP12NV9/viscose-coat.jpg",
+        price: 25000,
+      },
+    ],
+  },
+  {
+    title: "jumpers",
+    items: [
+      {
+        id: 1,
+        name: "blue jumpsuit",
+        imageUrl: "https://i.ibb.co/kSh0Dsg/jumpsuit-8.jpg",
+        price: 25000,
+      },
+      {
+        id: 2,
+        name: "yellow jumpsuit",
+        imageUrl: "https://i.ibb.co/Pz9YWdK/jumpsuit-7.jpg",
+        price: 25000,
+      },
+      {
+        id: 3,
+        name: "vintage jumpsuit",
+        imageUrl: "https://i.ibb.co/DYNfw9B/jumpsuit-6.jpg",
+        price: 20000,
+      },
+      {
+        id: 4,
+        name: "black jumpsuit",
+        imageUrl: "https://i.ibb.co/zhqVGjc/jumpsuit-4.jpg",
+        price: 24000,
+      },
+      {
+        id: 5,
+        name: "rihdoe jumpsuit",
+        imageUrl: "https://i.ibb.co/y4BvQvJ/jumpsuit-2.jpg",
+        price: 27000,
+      },
+      {
+        id: 6,
+        name: "longline sleeve jumpsuit",
+        imageUrl: "https://i.ibb.co/jMnxvTw/jumpsuit-1.jpg",
+        price: 25000,
+      },
+    ],
+  },
+  {
+    title: "t-shirts",
+    items: [
+      {
+        id: 1,
+        name: "short sleeve shirt",
+        imageUrl: "https://i.ibb.co/YZKW39H/shirt-short-sleeve-3.jpg",
+        price: 18000,
+      },
+      {
+        id: 2,
+        name: "short sleeve shirt",
+        imageUrl: "https://i.ibb.co/8X3Tzvg/shirt-short-sleeve-2.jpg",
+        price: 18000,
+      },
+      {
+        id: 3,
+        name: "short sleeve shirt",
+        imageUrl: "https://i.ibb.co/k0PbmLj/shirt-short-sleeve.jpg",
+        price: 17000,
+      },
+      {
+        id: 4,
+        name: "long sleeve shirt",
+        imageUrl: "https://i.ibb.co/kXTpqM6/shirt-long-sleeve-3.jpg",
+        price: 20000,
+      },
+      {
+        id: 5,
+        name: "long sleeve shirt",
+        imageUrl: "https://i.ibb.co/Y3JSMBm/shirt-long-sleeve-2.jpg",
+        price: 18000,
+      },
+      {
+        id: 6,
+        name: "long sleeve shirt",
+        imageUrl: "https://i.ibb.co/q1BTkb7/shirt-long-sleeve-1.jpg",
+        price: 20000,
+      },
+      {
+        id: 7,
+        name: "long sleeve shirt",
+        imageUrl: "https://i.ibb.co/Gn6pK1G/shirt-long-sleeve.jpg",
+        price: 17000,
+      },
+      {
+        id: 8,
+        name: "knit short sleeve shirt",
+        imageUrl: "https://i.ibb.co/2SxNKSP/shirt-jumper-knit.jpg",
+        price: 17000,
+      },
+    ],
+  },
+  {
+    title: "shoes",
+    items: [
+      {
+        id: 1,
+        name: "mules shoes",
+        imageUrl: "https://i.ibb.co/Bq7xD5L/mules-shoes.jpg",
+        price: 35000,
+      },
+      {
+        id: 2,
+        name: "mules shoes",
+        imageUrl: "https://i.ibb.co/2vRb2Kh/mules-shoes-2.jpg",
+        price: 35000,
+      },
+      {
+        id: 3,
+        name: "heels shoes",
+        imageUrl: "https://i.ibb.co/2gn709M/heels.jpg",
+        price: 30000,
+      },
+      {
+        id: 4,
+        name: "boots shoes",
+        imageUrl: "https://i.ibb.co/4SXHn5y/boots-3.jpg",
+        price: 40000,
+      },
+      {
+        id: 5,
+        name: "black boots",
+        imageUrl: "https://i.ibb.co/7rT8GJX/boots-2.jpg",
+        price: 45000,
+      },
+      {
+        id: 6,
+        name: "black boots",
+        imageUrl: "https://i.ibb.co/zxMg4VB/boots.jpg",
+        price: 35000,
+      },
+      {
+        id: 7,
+        name: "sandals shoes",
+        imageUrl: "https://i.ibb.co/yXd68xK/sandals.jpg",
+        price: 25000,
+      },
+    ],
+  },
+  {
+    title: "trouser",
+    items: [
+      {
+        id: 1,
+        name: "wide leg trousers",
+        imageUrl: "https://i.ibb.co/H4HWxs8/trous-wide-leg-trousers.jpg",
+        price: 20000,
+      },
+      {
+        id: 2,
+        name: "trousers with ties",
+        imageUrl: "https://i.ibb.co/XFJxLrS/trous-trousers-with-ties.jpg",
+        price: 25000,
+      },
+      {
+        id: 3,
+        name: "slim fit trousers",
+        imageUrl: "https://i.ibb.co/nLMXgfV/trous-trousers-slim-fit.jpg",
+        price: 25000,
+      },
+      {
+        id: 4,
+        name: "black trousers",
+        imageUrl: "https://i.ibb.co/4dYsp69/trous-trousers-2.jpg",
+        price: 24000,
+      },
+      {
+        id: 5,
+        name: "white wide pants",
+        imageUrl: "https://i.ibb.co/p0ZsWWD/trous-trouser.jpg",
+        price: 35000,
+      },
+      {
+        id: 6,
+        name: "tapered trouser",
+        imageUrl: "https://i.ibb.co/DLndjnw/trous-tapered-trousers.jpg",
+        price: 30000,
+      },
+      {
+        id: 7,
+        name: "boucle jersey pants",
+        imageUrl: "https://i.ibb.co/rQX4yFS/trous-boucle-jersey.jpg",
+        price: 33000,
+      },
+      {
+        id: 8,
+        name: "brown tapered trouser",
+        imageUrl: "https://i.ibb.co/DLndjnw/trous-tapered-trousers.jpg",
+        price: 30000,
+      },
+      {
+        id: 9,
+        name: "faux leather trouser",
+        imageUrl: "https://i.ibb.co/s6jS8Q8/trous-faux-leather.jpg",
+        price: 25000,
+      },
+    ],
+  },
+];
+
+export const ACCESSORIES = [
+  {
+    id: 1,
+    name: "NY yankees cap",
+    imageUrl: "https://i.ibb.co/QY5CGHg/ny-yankees-cap.jpg",
+    price: 15000,
+  },
+  {
+    id: 2,
+    name: "NY yankees cap",
+    imageUrl: "https://i.ibb.co/QY5CGHg/ny-yankees-cap.jpg",
+    price: 15000,
+  },
+  {
+    id: 3,
+    name: "chain necklace",
+    imageUrl: "https://i.ibb.co/D5sMMck/necklace.jpg",
+    price: 25000,
+  },
+  {
+    id: 4,
+    name: "gold necklace",
+    imageUrl: "https://i.ibb.co/7gPSF0g/necklace-gold.jpg",
+    price: 25000,
+  },
+  {
+    id: 5,
+    name: "buckle",
+    imageUrl: "https://i.ibb.co/TqRKmwk/buckle.jpg",
+    price: 15000,
+  },
+  {
+    id: 6,
+    name: "bag pack black",
+    imageUrl: "https://i.ibb.co/BTtXJ6m/black-bag.jpg",
+    price: 20000,
+  },
+  {
+    id: 7,
+    name: "snap clasp",
+    imageUrl: "https://i.ibb.co/qYWn9dT/belt-snap-clasp.jpg",
+    price: 15000,
+  },
+  {
+    id: 8,
+    name: "beanie",
+    imageUrl: "https://i.ibb.co/DkrBzNX/beanie.jpg",
+    price: 10000,
+  },
+  {
+    id: 9,
+    name: "vintage watch",
+    imageUrl: "https://i.ibb.co/kxkC2dd/vintage-watch.jpg",
+    price: 55000,
+  },
+];
+
 export const CATEGORIES = [
   {
     id: 1,

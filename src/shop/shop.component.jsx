@@ -9,7 +9,7 @@ import { setCategories } from "../store/categories/category.action";
 import CategoriesPreview from "../routes/categories-preview/categories-preview";
 import Category from "../routes/category/category";
 
-import "./shop.styles.scss";
+import { ShopContainer } from "./shop.styles.jsx";
 
 const Shop = () => {
   const dispatch = useDispatch();
@@ -24,10 +24,12 @@ const Shop = () => {
   }, []);
 
   return (
-    <Routes>
-      <Route index element={<CategoriesPreview />} />
-      <Route path=":category" element={<Category />} />
-    </Routes>
+    <ShopContainer>
+      <Routes>
+        <Route index element={<CategoriesPreview />} />
+        <Route path=":category" element={<Category />} />
+      </Routes>
+    </ShopContainer>
   );
 };
 

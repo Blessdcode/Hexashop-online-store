@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+git rm --cached src/shop-data.js
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
