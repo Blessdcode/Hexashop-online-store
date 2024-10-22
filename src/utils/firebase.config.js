@@ -124,10 +124,40 @@ export const addCollectionAndDocuments = async (
 };
 
 
-export const getCategoriesAndDocuments = async () => {
-  const collectionRef = collection(db, "categories");
-  const q = query(collectionRef, orderBy("title", "desc"));
+export const getDocuments = async ({
+  collectionName,
+  sortBy = "title",
+  sortOrder = "asc",
+}) => {
+  try {
+    const collectionRef = collection(db, collectionName);
+    const q = query(collectionRef, orderBy(sortBy, sortOrder));
 
-  const querySnapshot = await getDocs(q);
-  return querySnapshot.docs.map((doc) => doc.data());
+    const querySnapshot = await getDocs(q);
+    return querySnapshot.docs.map((doc) => doc.data());
+  } catch (error) {
+    console.error(`Error fetching documents from ${collectionName}: `, error);
+    return []; 
+  }
+};
+
+
+export const getCategoriesAndDocuments = async () => {
+  return await getDocuments({
+    collectionName: "categories",
+    sortBy: "title",
+    sortOrder: "desc",
+  });
+};
+
+
+export const getMensCategories = async () => {
+  return await getDocuments({
+    collectionName: "mens",
+    sortBy: "title",
+    sortOrder: "asc",
+    filters: [
+      { field: "category", operator: "==", value: "sports" }, 
+    ],
+  });
 };

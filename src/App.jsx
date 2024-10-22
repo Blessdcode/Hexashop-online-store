@@ -7,6 +7,7 @@ import Navigation from "./routes/navigation/navigation";
 import Home from "./routes/home/home.component";
 import Shop from "./shop/shop.component";
 import Authentication from "./routes/auth/auth.component";
+import MensShop from './routes/mens-shop/mens-shop'
 
 import {
   onAuthStateChangedListener,
@@ -32,6 +33,7 @@ const App = () => {
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
         <Route path="shop/*" element={<Shop />} />
+        <Route path="mens/*" element={<MensShop />} />
       </Route>
       <Route path="auth" element={<Authentication />} />
     </Routes>

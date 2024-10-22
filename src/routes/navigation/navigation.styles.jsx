@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
+position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -88,7 +89,7 @@ export const MobileMenu = styled.div`
   // left: -15px;
   background: black;
   color: #fff;
-  z-index: 1000;
+  z-index: 100;
   text-transform: upperCase;
 
   ${NavLink} {

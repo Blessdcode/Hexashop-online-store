@@ -1,7 +1,11 @@
 import { createContext, useState, useEffect } from "react";
 
+import { MENS,WOMENS,ACCESSORIES } from "../../src/shop-data";
 
-import { getCategoriesAndDocuments } from "../utils/firebase.config";
+import {
+  getCategoriesAndDocuments,
+  addCollectionAndDocuments,
+} from "../utils/firebase.config";
 
 export const CategoriesContext = createContext({
   categoriesMap: {},
@@ -17,8 +21,12 @@ export const CategoriesProvider = ({ children }) => {
 
     getCategoriesMap();
   }, []);
-  const value = { categoriesMap };
 
+  // useEffect(() => {
+  //   addCollectionAndDocuments("accessories", ACCESSORIES);
+  // }, []);
+
+  const value = { categoriesMap };
 
   return (
     <CategoriesContext.Provider value={value}>

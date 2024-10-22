@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Link } from "react-router-dom";
 
-export const CategoryPreviewContainer = styled.div`
+export const PreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

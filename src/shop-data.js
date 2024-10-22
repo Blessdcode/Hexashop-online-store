@@ -1,4 +1,4 @@
-import { discover, men, women, jersey, shoe, short } from "../src/assets";
+import { discover, men, women, jersey, shoe, short, slide_1, slide_2, slide_3 } from "../src/assets";
 
 export const SHOP_DATA = [
   {
@@ -1020,58 +1020,63 @@ export const WOMENS = [
 
 export const ACCESSORIES = [
   {
-    id: 1,
-    name: "NY yankees cap",
-    imageUrl: "https://i.ibb.co/QY5CGHg/ny-yankees-cap.jpg",
-    price: 15000,
-  },
-  {
-    id: 2,
-    name: "NY yankees cap",
-    imageUrl: "https://i.ibb.co/QY5CGHg/ny-yankees-cap.jpg",
-    price: 15000,
-  },
-  {
-    id: 3,
-    name: "chain necklace",
-    imageUrl: "https://i.ibb.co/D5sMMck/necklace.jpg",
-    price: 25000,
-  },
-  {
-    id: 4,
-    name: "gold necklace",
-    imageUrl: "https://i.ibb.co/7gPSF0g/necklace-gold.jpg",
-    price: 25000,
-  },
-  {
-    id: 5,
-    name: "buckle",
-    imageUrl: "https://i.ibb.co/TqRKmwk/buckle.jpg",
-    price: 15000,
-  },
-  {
-    id: 6,
-    name: "bag pack black",
-    imageUrl: "https://i.ibb.co/BTtXJ6m/black-bag.jpg",
-    price: 20000,
-  },
-  {
-    id: 7,
-    name: "snap clasp",
-    imageUrl: "https://i.ibb.co/qYWn9dT/belt-snap-clasp.jpg",
-    price: 15000,
-  },
-  {
-    id: 8,
-    name: "beanie",
-    imageUrl: "https://i.ibb.co/DkrBzNX/beanie.jpg",
-    price: 10000,
-  },
-  {
-    id: 9,
-    name: "vintage watch",
-    imageUrl: "https://i.ibb.co/kxkC2dd/vintage-watch.jpg",
-    price: 55000,
+    title: "accessories",
+    items: [
+      {
+        id: 1,
+        name: "NY yankees cap",
+        imageUrl: "https://i.ibb.co/QY5CGHg/ny-yankees-cap.jpg",
+        price: 15000,
+      },
+      {
+        id: 2,
+        name: "NY yankees cap",
+        imageUrl: "https://i.ibb.co/QY5CGHg/ny-yankees-cap.jpg",
+        price: 15000,
+      },
+      {
+        id: 3,
+        name: "chain necklace",
+        imageUrl: "https://i.ibb.co/D5sMMck/necklace.jpg",
+        price: 25000,
+      },
+      {
+        id: 4,
+        name: "gold necklace",
+        imageUrl: "https://i.ibb.co/7gPSF0g/necklace-gold.jpg",
+        price: 25000,
+      },
+      {
+        id: 5,
+        name: "buckle",
+        imageUrl: "https://i.ibb.co/TqRKmwk/buckle.jpg",
+        price: 15000,
+      },
+      {
+        id: 6,
+        name: "bag pack black",
+        imageUrl: "https://i.ibb.co/BTtXJ6m/black-bag.jpg",
+        price: 20000,
+      },
+      {
+        id: 7,
+        name: "snap clasp",
+        imageUrl: "https://i.ibb.co/qYWn9dT/belt-snap-clasp.jpg",
+        price: 15000,
+      },
+      {
+        id: 8,
+        name: "beanie",
+        imageUrl: "https://i.ibb.co/DkrBzNX/beanie.jpg",
+        price: 10000,
+      },
+      {
+        id: 9,
+        name: "vintage watch",
+        imageUrl: "https://i.ibb.co/kxkC2dd/vintage-watch.jpg",
+        price: 55000,
+      },
+    ],
   },
 ];
 
@@ -1112,4 +1117,30 @@ export const CATEGORIES = [
     image: jersey,
     route: "shop/jersey",
   },
+];
+
+
+export const sliderItems = [
+  {
+    id: 1,
+    img: slide_1,
+    title: "SUMMER SALE",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "f5fafd",
+  },
+  {
+    id: 2,
+    img: slide_2,
+    title: "AUTUMN COLLECTION",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "fcf1ed",
+  },
+  {
+    id: 3,
+    img: slide_3,
+    title: "LOUNGEWEAR LOVE",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "f5fafd",
+  },
+  
 ];

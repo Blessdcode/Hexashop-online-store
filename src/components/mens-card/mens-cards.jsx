@@ -5,16 +5,12 @@ import {
   Price,
   ImageContainer,
   FooterContainer,
-} from "./products-card.styles";
-
-import { AiOutlineShoppingCart } from "react-icons/ai";
+} from "./mens-cards.styles";
 import { TbCurrencyNaira } from "react-icons/tb";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
-// eslint-disable-next-line react/prop-types
-const ProductsCards = ({ product }) => {
-  // eslint-disable-next-line react/prop-types
+const MensCards = ({ product }) => {
   const { name, price, imageUrl } = product;
-
   return (
     <ProductCartContainer>
       <ImageContainer>
@@ -24,7 +20,6 @@ const ProductsCards = ({ product }) => {
         <Footer>
           <Name>{name}</Name>
           <Price>
-            {" "}
             <TbCurrencyNaira /> {price}
           </Price>
         </Footer>
@@ -34,4 +29,4 @@ const ProductsCards = ({ product }) => {
   );
 };
 
-export default ProductsCards;
+export default MensCards;
