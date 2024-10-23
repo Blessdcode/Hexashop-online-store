@@ -1,47 +1,44 @@
-import { useState } from "react";
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
-import { sliderItems } from '../../shop-data'
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
-import {Container, Arrow, Slide, ImgContainer, InfoContainer, Title, Desc, Button, Wrapper, Image} from './slide-component.style'
+import {
+  Container,
+  ImgContainer,
+  Title,
+  SpanEl,
+} from "./slide-component.style";
+
+const slideImages = [
+  {
+    url: "https://i.ibb.co/1dfQ18N/slide-4.png",
+    caption: "New Season Styles",
+    para: "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
+  },
+  {
+    url: "https://i.ibb.co/RcxHcbg/slide-3.png",
+    caption: "Big Fashion Festival",
+    para: "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
+  },
+  {
+    url: "https://i.ibb.co/71Q2BtS/slide-2.png",
+    caption: "Best of Styles",
+    para: "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
+  },
+];
 
 const Slider = () => {
-    const [slideIndex, setSlideIndex] = useState(0);
-    const handleClick = (direction) => {
-        if (direction === "left") {
-            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
-        } else {
-            setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
-        }
-    };
+  return (
+    <Container>
+      <Slide>
+        {slideImages.map(({ url, caption, para }, index) => (
+          <ImgContainer key={index} style={{ backgroundImage: `url(${url})` }}>
+            <Title>{caption}</Title>
+            <SpanEl>{para}</SpanEl>
+          </ImgContainer>
+        ))}
+      </Slide>
+    </Container>
+  );
+};
 
-
-    setTimeout(handleClick, 4000)
-
-
-    return (
-        <Container>
-            {/* <Arrow direction="left" onClick={() => handleClick("left")}>
-                <AiOutlineArrowLeft />
-            </Arrow> */}
-            <Wrapper slideIndex={slideIndex}>
-                {sliderItems.map((item) => (
-                    <Slide bg={item.bg} key={item.id}>
-                        <ImgContainer>
-                            <Image src={item.img} />
-                        </ImgContainer>
-                        <InfoContainer>
-                            <Title>{item.title}</Title>
-                            <Desc>{item.desc}</Desc>
-                            <Button>SHOW NOW</Button>
-                        </InfoContainer>
-                    </Slide>
-                ))}
-            </Wrapper>
-            {/* <Arrow direction="right" onClick={() => handleClick("right")}>
-                <AiOutlineArrowRight />
-            </Arrow> */}
-        </Container>
-    )
-}
-
-export default Slider
+export default Slider;
