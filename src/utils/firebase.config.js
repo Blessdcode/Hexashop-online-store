@@ -22,6 +22,7 @@ import {
   query,
   getDocs,
   orderBy,
+  addDoc,
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -150,7 +151,6 @@ export const getCategoriesAndDocuments = async () => {
   });
 };
 
-
 export const getMensCategories = async () => {
   return await getDocuments({
     collectionName: "mens",
@@ -161,3 +161,29 @@ export const getMensCategories = async () => {
     ],
   });
 };
+
+export const getWomensCategories = async () => {
+  return await getDocuments({
+    collectionName: "womens",
+    sortBy: "title",
+    sortOrder: "asc",
+    filters: [
+      { field: "category", operator: "==", value: "sports" }, 
+    ],
+  });
+};
+
+
+
+
+export const addDataToFirestore = async (collectionName, data) => {
+  try {
+    const collectionRef = collection(db, collectionName);
+    const docRef = await addDoc(collectionRef, data);
+    console.log("Document written with ID: ", docRef.id);
+  } catch (error) {
+    console.error("Error adding document: ", error);
+  }
+};
+
+

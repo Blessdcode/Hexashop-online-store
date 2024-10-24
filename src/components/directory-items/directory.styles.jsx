@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const DirectoryContainer = styled.div`
   margin-top: 24px;
-  /* display: grid; */
-  /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
   padding: 10px;
+
 
   @media (max-width: 756px) {
     margin-top: 10px;
@@ -64,7 +63,7 @@ export const Body = styled.div`
 export const DirectoryItemContainer = styled.div`
   position: relative;
   height: 440px;
-  width:450px;
+  width: 450px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -98,4 +97,10 @@ export const DirectoryItemContainer = styled.div`
   @media (max-width: 756px) {
     height: 100%;
   }
+`;
+
+export const Title = styled.h2`
+  margin: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
 `;

@@ -4,20 +4,20 @@ import { selectCategoriesMap } from "../../store/mens/men.selector";
 
 import MenCategory from "../../components/men-category-links/men-categories";
 
-const MensPreview = () => {
-    const mensCategoriesMap = useSelector(selectCategoriesMap);
+import Spinner from "../../components/spinner/spinner";
 
-    if (!mensCategoriesMap || Object.keys(mensCategoriesMap).length === 0) {
-      return <div>Loading...</div>;
-    }
+const MensPreview = () => {
+  const mensCategoriesMap = useSelector(selectCategoriesMap);
+
+  if (!mensCategoriesMap || Object.keys(mensCategoriesMap).length === 0) {
+    return <Spinner />;
+  }
   return (
     <>
       {Object.keys(mensCategoriesMap).map((title) => {
         const products = mensCategoriesMap[title];
 
-        return (
-            <MenCategory key={title} title={title} products={products}/>
-        )
+        return <MenCategory key={title} title={title} products={products} />;
       })}
     </>
   );

@@ -5,11 +5,13 @@ import {
   Title,
   Preview,
 } from './men-category.styles'
+import { MdArrowForwardIos } from "react-icons/md";
+
 
 const MenCategory = ({ products, title }) => {
   return (
     <PreviewContainer>
-      <Title to={title}>{title.toUpperCase()}</Title>
+      <Title to={title}>{title.toUpperCase()}<MdArrowForwardIos/> </Title>
 
       <Preview>
         {products

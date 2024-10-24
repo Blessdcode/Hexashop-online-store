@@ -5,6 +5,7 @@ export const CategoryContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
   row-gap: 50px;
+
   @media (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -20,4 +21,4 @@ export const Title = styled.h2`
 export const Btn = styled.p`
   text-transform: capitalize;
   cursor: pointer;
-`;
+`

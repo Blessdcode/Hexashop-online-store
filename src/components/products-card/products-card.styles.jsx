@@ -25,6 +25,11 @@ export const ImageContainer = styled.div`
     object-position: center;
     margin-bottom: 5px;
     border-radius: 20px 20px 0 0;
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      cursor: pointer;
+    }
   }
 `;
 

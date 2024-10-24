@@ -4,6 +4,12 @@ export const Container = styled.div`
   background: #000;
   color: #fff;
   display: flex;
+  align-items: flex-end;
+  padding: 15px;
+   @media (max-width: 786px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   margin-top: 34px;
 `;
 
@@ -17,6 +23,9 @@ export const Left = styled.div`
 export const Logo = styled.div`
   display: flex;
   align-items: center;
+  background:#fff;
+  padding:8px;
+  border-radius:30px
 `;
 export const Name = styled.h1`
   font-weight: bold;
@@ -45,6 +54,11 @@ export const SocialIcon = styled.div`
 export const Center = styled.div`
   flex: 1;
   padding: 20px;
+
+  @media (max-width: 786px) {
+    /* display:flex; */
+    flex-wrap: wrap;
+  }
 `;
 
 export const Title = styled.h3`
@@ -57,6 +71,10 @@ export const List = styled.ul`
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 356px) {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 `;
 
 export const ListItem = styled.li`

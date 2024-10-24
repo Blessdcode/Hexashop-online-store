@@ -18,6 +18,10 @@ export const Title = styled(Link)`
   color: black;
   font-weight: 500;
   width: 30%;
+
+  @media (max-width:786px) {
+    font-size: 16px;
+  }
 `;
 
 export const Preview = styled.div`

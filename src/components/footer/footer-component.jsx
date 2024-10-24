@@ -78,24 +78,12 @@ const Footer = () => {
           <img src={logo} alt="Logo" aria-label="LOGO" />
         </Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+          This web application is only for education purpose.
+        Images use was gotten online.
         </Desc>
-        <SocialContainer>
-          <SocialIcon color="3B5999">
-            <AiFillFacebook />
-          </SocialIcon>
-          <SocialIcon color="E4405F">
-            <AiFillInstagram />
-          </SocialIcon>
-          <SocialIcon color="55ACEE">
-            <AiOutlineTwitter />
-          </SocialIcon>
-        </SocialContainer>
       </Left>
       <Center>
-        <Title>Useful Links</Title>
+        {/* <Title>Useful Links</Title> */}
         <List>
           {footerLinks.map((links) => (
             <ListItem key={links.id}>{links.title}</ListItem>
@@ -115,6 +103,17 @@ const Footer = () => {
           <AiFillMail style={{ marginRight: "10px" }} /> contact@lama.dev
         </ContactItem>
       </Right>
+      <SocialContainer>
+        <SocialIcon color="3B5999">
+          <AiFillFacebook />
+        </SocialIcon>
+        <SocialIcon color="E4405F">
+          <AiFillInstagram />
+        </SocialIcon>
+        <SocialIcon color="55ACEE">
+          <AiOutlineTwitter />
+        </SocialIcon>
+      </SocialContainer>
     </Container>
   );
 };

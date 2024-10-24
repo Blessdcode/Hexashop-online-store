@@ -26,6 +26,9 @@ export const Title = styled.h2`
   color: #fff;
   font-weight: 500;
   padding: 20px;
+  @media (max-width: 546px) {
+  font-size: 2rem;
+  }
 `;
 
 export const SpanEl = styled.span`
@@ -35,5 +38,6 @@ export const SpanEl = styled.span`
   text-align: center;
   @media (max-width: 756px) {
     width: 100%;
+    
   }
 `;

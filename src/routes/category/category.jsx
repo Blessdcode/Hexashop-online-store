@@ -1,16 +1,21 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import ProductsCards from "../../components/products-card/products-cards";
-import { selectCategoriesMap } from "../../store/categories/category.selector";
+import {
+  selectCategoriesMap,
+  selectIsLoading,
+} from "../../store/categories/category.selector";
 
-// import {CategoriesContext} from '../../context/products.context'
-import {CategoryContainer, Title} from "./category.styles";
+import Spinner from "../../components/spinner/spinner";
+
+import { CategoryContainer, Title, Btn } from "./category.styles";
 
 const Category = () => {
-  // const {categoriesMap} = useContext(CategoriesContext);
+const navigate = useNavigate();
   const { category } = useParams();
+  const isLoading = useSelector(selectIsLoading);
   const categoriesMap = useSelector(selectCategoriesMap);
 
   const [products, setProducts] = useState(categoriesMap[category]);
@@ -22,14 +27,19 @@ const Category = () => {
   return (
     <>
       <Title>{category.toUpperCase()}</Title>
-      <CategoryContainer>
-        {products &&
-          products.map((product) => (
-            <ProductsCards key={product.id} product={product} />
-          ))}
-      </CategoryContainer>
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <CategoryContainer>
+          {products &&
+            products.map((product) => (
+              <ProductsCards key={product.id} product={product} />
+            ))}
+        </CategoryContainer>
+      )}
+      <Btn onClick={() => navigate(-1)}>go back</Btn>
     </>
   );
 };
 
-export default Category
+export default Category;

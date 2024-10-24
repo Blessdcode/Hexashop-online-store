@@ -1,13 +1,15 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Container = styled.div`
-position: relative;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
+  /* margin-bottom:30px; */
 
   @media (max-width: 768px) {
     flex-direction: row;
@@ -57,14 +59,16 @@ export const LogoContainer = styled(Link)`
   }
 `;
 
-export const NavLink = styled(Link)`
+export const NavBarLink = styled(NavLink)`
   padding: 10px 15px;
   cursor: pointer;
   font-weight: 500;
-  color: black;
 
   &:hover {
     color: #444;
+  }
+  &.active {
+    color: #800000;
   }
 `;
 
@@ -98,12 +102,9 @@ export const MobileMenu = styled.div`
     width: 100%;
     border: 1px solid #fff;
     border-radius: 5px;
-    opacity: 0.8;
-    font-size:14px;
+    font-size: 14px;
 
-    &:hover {
-      opacity: 1;
-    }
+  
   }
 
   @media (min-width: 769px) {

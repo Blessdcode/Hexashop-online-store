@@ -8,3 +8,6 @@ export const selectCategoriesMap = (state) => {
   );
   return mensCategoriesMap;
 };
+
+
+

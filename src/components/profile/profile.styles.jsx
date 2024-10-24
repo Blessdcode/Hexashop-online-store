@@ -8,8 +8,8 @@ export const ProfileContainer = styled.div`
 `;
 
 export const ImageCon = styled.img`
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   border: 1px solid #000;
   padding: 2px;

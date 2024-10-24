@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import { selectCategoriesMap } from "../../store/mens/men.selector";
 
 import MensCards from "../../components/mens-card/mens-cards";
+import Spinner from "../../components/spinner/spinner";
 
-import { CategoryContainer, Title } from "./mens-category.styles";
+import { CategoryContainer, Title,Btn } from "./mens-category.styles";
 
 const MensCategories = () => {
+  const navigate = useNavigate();
   const { mens } = useParams();
   const menCategoriesMap = useSelector(selectCategoriesMap);
 
@@ -17,9 +19,12 @@ const MensCategories = () => {
   useEffect(() => {
     setProducts(menCategoriesMap[mens]);
   }, [mens, menCategoriesMap]);
+
+  if (!menCategoriesMap) {
+    return <Spinner />;
+  }
   return (
     <>
-      
       <Title>{mens.toUpperCase()}</Title>
       <CategoryContainer>
         {products &&
@@ -27,6 +32,7 @@ const MensCategories = () => {
             <MensCards key={product.id} product={product} />
           ))}
       </CategoryContainer>
+       <Btn onClick={() => navigate(-1)}>go back</Btn>
     </>
   );
 };
